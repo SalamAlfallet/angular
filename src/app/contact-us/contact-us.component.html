@@ -1,0 +1,24 @@
+<html>
+<!--
+<h3>Contact Us:</h3>
+<p>Mobile: <span>000</span></p>
+<p>Email: <span>salam.alfaleet@gmail.com
+
+
+
+</span></p>
+-->
+
+<div>
+<p>Input of data:</p>
+<input #inputAge (keyup.enter)="printvalue($event.target)">
+<br>
+<br>
+<button (click)="printvalue(inputAge)" >Add age</button>
+<h4 *ngFor= 'let ur of print'> {{ur}}</h4>
+
+</div>
+
+
+
+</html>

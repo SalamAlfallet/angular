@@ -1,0 +1,28 @@
+
+
+html{
+
+    background-color: antiquewhite;
+}
+h4{
+    color: darkblue;
+    margin-left: 10px;
+}
+
+p{
+    
+  font-weight: 20px;
+    font-size:30px;
+    font-family:initial;
+}
+
+input{
+
+    width: 30%;;
+}
+div{
+text-align: center;
+    padding: 20px;
+    border-style: dashed;
+  
+}

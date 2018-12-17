@@ -1,0 +1,21 @@
+#main{
+    background-color: azure;
+}
+h1{
+    color: darkblue;
+}
+p{
+    margin-left: 10px;
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.redcolor{
+color: red;
+
+}
+
+.greencolor{
+
+   color: green; 
+}

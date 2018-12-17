@@ -1,0 +1,67 @@
+<div id="main">
+<h1> Personal Information</h1>
+<p>Name : <span>Salam Alfaleet</span></p>
+<p>ID :  <span></span>
+</p>
+<button (click)="btnclick()" > Ok</button>
+
+
+<p *ngFor= 'let ur of data'> {{ur}}  </p>
+<br>
+<input type="text" id="input1">
+
+<p id="par"> </p>
+<button (click)="submitclick()" >change active</button>
+{{isactive?'isactive': 'notactive'}}
+<br>
+
+<br>
+<input (keyup.control.m)="ctrM($event)">
+<h1 [class.redcolor]="number">red</h1>
+<h1 [class.greencolor]="!isactive" > i am green</h1>
+
+<input (keyup.enter)="printvalue($event)">
+<p *ngFor= 'let ur of print'> {{ur}}  </p>
+<h2 [style.color]="isactive? 'green':'blue'">iam h2 text</h2>
+
+</div>
+
+
+<input [(ngModel)] ='name'/>
+
+
+<div [ngSwitch] ='x'>
+<p *ngSwitchCase ='1'>one</p>      
+<p *ngSwitchCase ='2'>two</p> 
+<p *ngSwitchCase ='3'>three</p> 
+<p *ngSwitchDufault >hhhh</p> 
+
+<p> welcome {{quantity}}</p>
+     name_product: 
+      <input  [(ngModel)] ='name_product'  />
+   
+    quantity :
+    <input  [(ngModel)] ='quantity' />
+
+    price :
+    <input  [(ngModel)] ='price'  />
+      <button (click)="addProduct()">add Product</button>
+      
+      <table >
+          <tr>
+            <th>name Product</th>
+            <th>quantity</th> 
+            <th>price</th>
+          </tr>
+          <tr *ngFor= 'let ur of arrayOfProduct'>
+            <td>{{ ur.name}}</td>
+            <td>{{ ur.quantity}}</td> 
+            <td>{{ ur.price}}</td>
+          </tr>
+        
+        </table>
+    
+    <div *ngFor= 'let ur of data2 index as i;first as first; last as last'> 
+    <p [style.color] ="first ?'pink':last?'green':'blue' "> {{ur}}  </p>
+   </div>
+</div>
